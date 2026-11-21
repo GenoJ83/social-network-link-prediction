@@ -1,3 +1,5 @@
+import pytest
+pytest.importorskip("torch")
 """Unit tests for graph generation, edge sampler, and GCN forward pass."""
 import torch
 from src.data.graph_generator import generate_social_graph

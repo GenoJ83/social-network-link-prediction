@@ -6,5 +6,4 @@ def format_graph_summary(G: nx.Graph, recommended_pairs):
     lines.append("Top Predicted Missing Connections:")
     for u, v in recommended_pairs:
         lines.append(f"  Connection candidate: Node {u} <---> Node {v}")
-    return "
-".join(lines)
+    return "\n".join(lines)
